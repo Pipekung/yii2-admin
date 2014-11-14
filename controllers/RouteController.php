@@ -20,7 +20,7 @@ use Exception;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class RouteController extends \yii\web\Controller
+class RouteController extends Controller
 {
     const CACHE_TAG = 'mdm.admin.route';
 
