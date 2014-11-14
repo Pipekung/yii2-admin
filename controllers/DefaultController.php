@@ -10,7 +10,7 @@ namespace mdm\admin\controllers;
  */
 class DefaultController extends \yii\web\Controller
 {
-
+	public $layout = '@app/themes/bootstrap/views/layouts/admin';
     /**
      * Action index
      */
