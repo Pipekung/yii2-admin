@@ -8,6 +8,7 @@ namespace mdm\admin\controllers;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
+// class DefaultController extends \yii\web\Controller
 class DefaultController extends Controller
 {
 	public $layout = '@app/themes/bootstrap/views/layouts/admin';
