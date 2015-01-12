@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use pipekung\widgets\AdminMenu;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -13,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="menu-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <?= AdminMenu::widget() ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]);  ?>
 
     <p>

@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use pipekung\widgets\AdminMenu;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -13,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="role-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <?= AdminMenu::widget() ?>
 
     <p>
         <?= Html::a(Yii::t('rbac-admin', 'Create Permission'), ['create'], ['class' => 'btn btn-success']) ?>

@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use pipekung\widgets\AdminMenu;
 
 /**
  * @var yii\web\View $this
@@ -8,7 +9,7 @@ use yii\helpers\Html;
 $this->title = Yii::t('rbac-admin', 'Routes');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<h1>Routes</h1>
+<?= AdminMenu::widget() ?>
 <p>
     <?= Html::a(Yii::t('rbac-admin', 'Create route'), ['create'], ['class' => 'btn btn-success']) ?>
 </p>
