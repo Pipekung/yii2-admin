@@ -4,6 +4,7 @@ RBAC Manager for Yii 2
 Documentation
 -----
 - [Change Log](CHANGELOG.md).
+- [Authorization Guide](http://www.yiiframework.com/doc-2.0/guide-security-authorization.html). Important, read this first before continue.
 - [Basic Usage](docs/guide/basic-usage.md).
 - [Using Menu](docs/guide/using-menu.md).
 - [Api](http://mdmsoft.github.io/yii2-admin/index.html)
@@ -11,12 +12,14 @@ Documentation
 Installation
 ------------
 
+### Install With Composer
+
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 Either run
 
 ```
-php composer.phar require mdmsoft/yii2-admin "*"
+php composer.phar require mdmsoft/yii2-admin "~1.0"
 ```
 
 for dev-master
@@ -28,11 +31,25 @@ php composer.phar require mdmsoft/yii2-admin "dev-master"
 or add
 
 ```
-"mdmsoft/yii2-admin": "*"
+"mdmsoft/yii2-admin": "~1.0"
 ```
 
 to the require section of your `composer.json` file.
 
+### Install From Archive
+
+Download latest release from here [releases](https://github.com/mdmsoft/yii2-admin/releases) then extract to your project. 
+In your application config, add path alias for this extension.
+
+```php
+return [
+    ...
+    'aliases' => [
+        '@mdm/admin' => 'path/to/your/extracted',
+        ...
+    ]
+];
+```
 
 Usage
 -----

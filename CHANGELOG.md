@@ -1,12 +1,41 @@
 Yii2 Admin Change Log
 ==========================
 
-1.0.0-stable prepare
-- No change
+1.0.4 Under Development
+-----------------------
+
+- Bug: #102: Unique validation of the permission and role (mdmunir).
+- Enh: Clear cache when menu change (mdmunir).
+- Enh: Ensure get latest state of `user` component (mdmunir).
 
 
-1.0.0-rc under development
---------------------------
+1.0.3
+------
+
+
+1.0.2
+------
+
+- Enh: Add Portuguese language to translation message (iforme).
+- Enh: configurable Navbar defined in module config (Stefano Mtangoo).
+- Enh: Add Italian language to translation message (realtebo).
+
+1.0.1
+-----
+
+- Enh: Add Persian language to translation message (jafaripur).
+- Enh: Add French language to translation message (marsuboss).
+
+
+1.0.0
+-----
+
+- Enh: Internationalization (sosojni).
+- Enh: Add Russian language to translation message (m0zart89).
+
+
+1.0.0-rc 
+--------
 
 - Bug #12: Allow another module name (mdmunir).
 - Bug: #19: Added table prefix to table `menu` for some query (mdmunir, liu0472).
