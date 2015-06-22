@@ -1,9 +1,8 @@
 <?php
 
-use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Html;
 use yii\widgets\Pjax;
-use pipekung\widgets\AdminMenu;
 
 /**
  * @var yii\web\View $this
@@ -15,29 +14,27 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="role-index">
 
-    <?= AdminMenu::widget() ?>
-
     <p>
-        <?= Html::a(Yii::t('rbac-admin', 'Create Rule'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?=Html::a(Yii::t('rbac-admin', 'Create Rule'), ['create'], ['class' => 'btn btn-success'])?>
     </p>
 
-    <?php
-    Pjax::begin([
-        'enablePushState'=>false,
-    ]);
-    echo GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-            [
-                'attribute' => 'name',
-                'label' => Yii::t('rbac-admin', 'Name'),
-            ],
-            ['class' => 'yii\grid\ActionColumn',],
-        ],
-    ]);
-    Pjax::end();
-    ?>
+<?php
+Pjax::begin([
+	'enablePushState' => false,
+]);
+echo GridView::widget([
+	'dataProvider' => $dataProvider,
+	'filterModel' => $searchModel,
+	'columns' => [
+		['class' => 'yii\grid\SerialColumn'],
+		[
+			'attribute' => 'name',
+			'label' => Yii::t('rbac-admin', 'Name'),
+		],
+		['class' => 'yii\grid\ActionColumn'],
+	],
+]);
+Pjax::end();
+?>
 
 </div>

@@ -9,14 +9,11 @@ namespace mdm\admin\controllers;
  * @since 1.0
  */
 // class DefaultController extends \yii\web\Controller
-class DefaultController extends Controller
-{
-	public $layout = '@app/themes/bootstrap/views/layouts/admin';
-    /**
-     * Action index
-     */
-    public function actionIndex()
-    {
-        return $this->render('index');
-    }
+class DefaultController extends Controller {
+	/**
+	 * Action index
+	 */
+	public function actionIndex() {
+		return $this->render('index');
+	}
 }
